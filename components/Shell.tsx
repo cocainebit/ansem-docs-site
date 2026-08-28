@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Header } from "./Header";
 import { Sidebar } from "./Sidebar";
 import { SearchModal } from "./Search";
+import { Ask } from "./Ask";
 import type { SearchDoc } from "@/lib/search";
 
 /**
@@ -71,6 +72,7 @@ export function Shell({
       )}
 
       <SearchModal index={index} open={search} onClose={() => setSearch(false)} />
+      <Ask />
     </>
   );
 }

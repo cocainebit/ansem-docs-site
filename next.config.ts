@@ -2,11 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /*
-   * The dev-tools badge defaults to bottom-left, which is now where the
-   * sidebar's social link lives. Moved rather than disabled: the overlay is
-   * still worth having, it just cannot sit on top of a link.
+   * The dev-tools badge defaults to bottom-left (the sidebar's social link)
+   * and bottom-right is the docs assistant's button, so it is turned off.
    */
-  devIndicators: { position: "bottom-right" },
+  devIndicators: false,
 };
 
 export default nextConfig;

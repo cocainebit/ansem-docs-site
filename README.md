@@ -13,6 +13,22 @@ npm run dev        # http://localhost:3000
 hosted anywhere that serves files. There are no environment variables and no
 runtime services: the whole site is the `content/` directory plus a renderer.
 
+## The docs assistant
+
+The "Ask the docs" button (bottom right) posts to `app/api/ask/route.ts`,
+which splits every page at its `##` headings, picks the sections that best
+match the question (`lib/retrieve.ts`), and streams an answer from Claude
+(`claude-opus-5`, Anthropic SDK) with links to the pages it used. It needs
+`ANTHROPIC_API_KEY` in the environment (`.env.local` locally; the host's
+secrets in production). Without it the button still renders and the panel
+says the assistant is not configured. Refusal fallbacks are on
+(`fallbacks: "default"`), the page directory is prompt-cached for an hour,
+and each IP gets 30 questions an hour per instance.
+
+Because of that route, the site is no longer a pure static export: it needs
+a Node host (Vercel, a `next start` process, a container). Everything except
+`/api/ask` is still prerendered.
+
 ## Where things are
 
 ```
@@ -21,6 +37,9 @@ lib/nav-source.json the sidebar and tab structure
 lib/nav.ts          reads the above into tabs, groups and page order
 lib/content.ts      loads a page, strips frontmatter, extracts headings
 lib/search.ts       builds the search index at render time
+lib/retrieve.ts    section retrieval for the docs assistant
+app/api/ask/       the assistant route (streams from Claude)
+components/Ask.tsx the assistant button and panel
 components/mdx.tsx  the MDX component map
 app/globals.css     the token layer: every colour is defined once, here
 ```

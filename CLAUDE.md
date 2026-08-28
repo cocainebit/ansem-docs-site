@@ -9,6 +9,7 @@ README.md for layout and the two-edit rule for adding a page.
 | date       | session   | area                                                        |
 |------------|-----------|-------------------------------------------------------------|
 | 2026-08-27 | docs port | whole tree: initial port, retheme, nav. Dev server on :3344 |
+| 2026-08-28 | docs port | docs assistant: `app/api/ask`, `lib/retrieve.ts`, `components/Ask.tsx`. Needs ANTHROPIC_API_KEY in .env.local |
 
 Add your row BEFORE you write a file. Several Claude instances run on this
 machine at once; see ~/.claude/CLAUDE.md for the machine-wide rules.
