@@ -1,0 +1,279 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "aspen",
+  "name": "ansem",
+  "description": "CHANSE: a memecoin economy with its own chain, fair-launch launchpad, AMM, Solana bridge and community-governed proposals.",
+  "colors": {
+    "primary": "#1f9e40",
+    "light": "#3ddc5a",
+    "dark": "#157a32"
+  },
+  "favicon": "/favicon.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Start here",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "index",
+              "verify-chain",
+              "quickstart",
+              "architecture"
+            ]
+          },
+          {
+            "group": "The chain",
+            "pages": [
+              "chain/overview",
+              "chain/parameters",
+              "chain/accounts"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Products",
+        "groups": [
+          {
+            "group": "Wallet",
+            "pages": [
+              "wallet/overview",
+              "wallet/install",
+              "wallet/portfolio",
+              "wallet/bridging",
+              "wallet/security"
+            ]
+          },
+          {
+            "group": "Launchpad",
+            "pages": [
+              "launchpad/overview",
+              "launchpad/create-token",
+              "launchpad/trading",
+              "launchpad/graduation"
+            ]
+          },
+          {
+            "group": "AMM",
+            "pages": [
+              "amm/overview",
+              "amm/swapping",
+              "amm/liquidity"
+            ]
+          },
+          {
+            "group": "Bridge",
+            "pages": [
+              "bridge/overview",
+              "bridge/deposit",
+              "bridge/withdraw",
+              "bridge/architecture",
+              "bridge/fees-and-limits",
+              "bridge/faq"
+            ]
+          },
+          {
+            "group": "Proposals",
+            "pages": [
+              "proposals/overview",
+              "proposals/submit",
+              "proposals/voting"
+            ]
+          },
+          {
+            "group": "Explorer",
+            "pages": [
+              "explorer/overview",
+              "explorer/searching"
+            ]
+          },
+          {
+            "group": "Telegram bots",
+            "pages": [
+              "telegram/overview",
+              "telegram/commands"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Developers",
+        "groups": [
+          {
+            "group": "CLI",
+            "pages": [
+              "cli/installation",
+              "cli/wallet",
+              "cli/configuration",
+              "cli/keys",
+              "cli/balance",
+              "cli/transactions"
+            ]
+          },
+          {
+            "group": "SDK",
+            "pages": [
+              "sdk/overview",
+              "sdk/queries",
+              "sdk/transactions",
+              "sdk/wallets"
+            ]
+          },
+          {
+            "group": "Token operations",
+            "pages": [
+              "tokens/overview",
+              "tokens/create",
+              "tokens/mint",
+              "tokens/transfer",
+              "tokens/burn",
+              "tokens/query"
+            ]
+          },
+          {
+            "group": "Smart contracts",
+            "pages": [
+              "contracts/overview",
+              "contracts/scaffolding",
+              "contracts/building",
+              "contracts/deploying",
+              "contracts/executing",
+              "contracts/querying",
+              "contracts/discovery",
+              "contracts/deployed"
+            ]
+          },
+          {
+            "group": "Local development",
+            "pages": [
+              "localnet/overview",
+              "localnet/start",
+              "localnet/accounts"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "APIs",
+            "pages": [
+              "api/endpoints",
+              "api/rest",
+              "api/rpc",
+              "api/grpc"
+            ]
+          },
+          {
+            "group": "Chain API",
+            "pages": [
+              "api/chain/introduction",
+              "api/chain/blocks",
+              "api/chain/transactions",
+              "api/chain/accounts",
+              "api/chain/balances",
+              "api/chain/validators",
+              "api/chain/network",
+              "api/chain/token-metadata"
+            ]
+          },
+          {
+            "group": "Launchpad API",
+            "pages": [
+              "api/launchpad/introduction",
+              "api/launchpad/list-tokens",
+              "api/launchpad/token-detail",
+              "api/launchpad/trades",
+              "api/launchpad/candles",
+              "api/launchpad/sse",
+              "api/launchpad/wallet"
+            ]
+          },
+          {
+            "group": "Contract source",
+            "pages": [
+              "source/overview"
+            ]
+          },
+          {
+            "group": "Source: launchpad",
+            "pages": [
+              "source/launchpad/overview",
+              "source/launchpad/msg",
+              "source/launchpad/state",
+              "source/launchpad/contract",
+              "source/launchpad/error",
+              "source/launchpad/lib"
+            ]
+          },
+          {
+            "group": "Source: amm",
+            "pages": [
+              "source/amm/overview",
+              "source/amm/msg",
+              "source/amm/state",
+              "source/amm/contract",
+              "source/amm/error",
+              "source/amm/lib"
+            ]
+          },
+          {
+            "group": "Source: oracle",
+            "pages": [
+              "source/oracle/overview",
+              "source/oracle/msg",
+              "source/oracle/state",
+              "source/oracle/contract",
+              "source/oracle/error",
+              "source/oracle/lib"
+            ]
+          },
+          {
+            "group": "Source: config registry",
+            "pages": [
+              "source/config/overview",
+              "source/config/lib"
+            ]
+          },
+          {
+            "group": "Source: vesting",
+            "pages": [
+              "source/vesting/overview",
+              "source/vesting/msg",
+              "source/vesting/state",
+              "source/vesting/contract",
+              "source/vesting/error",
+              "source/vesting/lib",
+              "source/vesting/tests"
+            ]
+          },
+          {
+            "group": "Source: name service",
+            "pages": [
+              "source/names/overview",
+              "source/names/msg",
+              "source/names/state",
+              "source/names/contract",
+              "source/names/error",
+              "source/names/lib"
+            ]
+          },
+          {
+            "group": "Source: proposals",
+            "pages": [
+              "source/proposals/overview",
+              "source/proposals/msg",
+              "source/proposals/state",
+              "source/proposals/contract",
+              "source/proposals/error",
+              "source/proposals/lib"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
