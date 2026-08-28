@@ -54,7 +54,7 @@ export function Shell({
             <div className="flex h-16 items-center justify-between">
               <span className="flex items-center gap-2 text-[1.25rem] font-semibold tracking-[-0.03em]">
                 <Image src="/ansem.png" alt="" width={512} height={512} className="h-[26px] w-auto rounded-md" />
-                ansem
+                ansemchain
               </span>
               <button
                 type="button"

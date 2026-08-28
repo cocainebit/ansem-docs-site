@@ -8,12 +8,12 @@ import { titleMap } from "@/lib/content";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-const title = "ansem docs";
+const title = "Ansemchain docs";
 const description =
   "CHANSE: a memecoin economy with its own chain, fair-launch launchpad, AMM, Solana bridge and community-governed proposals.";
 
 export const metadata: Metadata = {
-  title: { default: title, template: "%s · ansem" },
+  title: { default: title, template: "%s · Ansemchain" },
   description,
   icons: { icon: "/favicon.png", apple: "/ansem.png" },
   openGraph: { title, description },

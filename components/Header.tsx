@@ -38,7 +38,7 @@ export function Header({
         </button>
 
         {/* The mark sits left of the wordmark and is decorative: the word
-            "ansem" is already the accessible name of this link, so the image
+            "ansemchain" is already the accessible name of this link, so the image
             takes an empty alt rather than repeating it to a screen reader. */}
         <Link
           href="/"
@@ -54,7 +54,7 @@ export function Header({
             priority
             className="h-[30px] w-auto rounded-md"
           />
-          ansem
+          ansemchain
         </Link>
 
         {/* Tab bar. Docs need it and the blog has no equivalent, so it borrows

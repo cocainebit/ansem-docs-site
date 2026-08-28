@@ -60,7 +60,7 @@ export default async function Page({
         <article className="mx-auto max-w-[46rem]">
           {/* The overview page opens on the loop. Only this page: a masthead
               that repeated on all 118 would stop being a masthead. */}
-          {key === "" && <Hero src="/hero.png" alt="The creation of ansem" />}
+          {key === "" && <Hero src="/hero.png" alt="The creation of Ansemchain" />}
 
           <header className="mb-10">
             {group && (

@@ -1,4 +1,4 @@
-# ansem-docs-site
+# ansem-docs-site (Ansemchain docs)
 
 Next.js + MDX docs site for ansemchain, built 2026-08-27 by porting the
 content of `~/ansem-docs` (Mintlify) into the `~/peard-docs` shell. See

@@ -1,4 +1,4 @@
-# ansem docs
+# Ansemchain docs
 
 The ansemchain documentation site. 118 pages of MDX rendered by Next.js.
 
