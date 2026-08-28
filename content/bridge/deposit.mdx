@@ -14,7 +14,7 @@ Each asset has its own pool vault on Solana, so a CHANSE deposit and an ANSEM de
 ## Prerequisites
 
 - A Solana wallet (Phantom, Solflare, etc.) holding the SPL you want to bridge (CHANSE or ANSEM)
-- An ansemchain wallet (Keplr, Leap, or Ansem Wallet)
+- An ansemchain wallet (Keplr, Leap, or Ansemchain Wallet)
 - **No SOL needed.** The bridge sponsors the Solana fee for you (see below).
 
 <Note>
@@ -60,7 +60,7 @@ Select **CHANSE** or **ANSEM** in the asset picker. The UI shows your Solana bal
 
 If this is your first time using the bridge, you need to link your Solana wallet to an ansemchain address. This registration is per wallet, not per asset -- once registered, it applies to every asset you bridge. You can either:
 
-- **Connect a wallet** -- Click "Connect Ansem Wallet" and select Keplr, Leap, or Ansem Wallet to auto-fill your address
+- **Connect a wallet** -- Click "Connect Ansemchain Wallet" and select Keplr, Leap, or Ansemchain Wallet to auto-fill your address
 - **Enter manually** -- Type your ansemchain address (starts with `ansem1`, 39+ characters)
 
 Click **Register Address** to create the on-chain link (the `UserAccount` PDA). This is a one-time step per wallet pair; the relayer can sponsor the rent for it.

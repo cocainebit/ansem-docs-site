@@ -1,8 +1,8 @@
 ---
 title: 'Wallet Integration'
-description: 'Connect Keplr, Leap, and Ansem Wallet in browser dApps'
+description: 'Connect Keplr, Leap, and Ansemchain Wallet in browser dApps'
 ---
-The SDK supports three browser wallets (Keplr, Leap, Ansem Wallet) and a mnemonic-based connection for development. All return a standard `WalletConnection` interface.
+The SDK supports three browser wallets (Keplr, Leap, Ansemchain Wallet) and a mnemonic-based connection for development. All return a standard `WalletConnection` interface.
 
 ## Wallet Modal (Recommended)
 
@@ -58,7 +58,7 @@ const wallet = await connectLeap({
 });
 ```
 
-### Ansem Wallet
+### Ansemchain Wallet
 
 ```typescript wrap
 import { connectAnsem } from "@ansem-chain/sdk";
@@ -91,7 +91,7 @@ if (isLeapAvailable()) {
 }
 
 if (isAnsemAvailable()) {
-  console.log("Ansem Wallet extension detected");
+  console.log("Ansemchain Wallet extension detected");
 }
 
 // Get all available wallet types

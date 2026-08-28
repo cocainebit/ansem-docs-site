@@ -39,7 +39,7 @@ Connect a user's wallet and send transactions:
 ```typescript wrap
 import { showWalletModal, sendAnsem } from "@ansem-chain/sdk";
 
-// Show wallet selection (Keplr, Leap, Ansem Wallet)
+// Show wallet selection (Keplr, Leap, Ansemchain Wallet)
 const wallet = await showWalletModal({
   rpcEndpoint: "https://rpc.ansemchain.fun",
 });
@@ -73,7 +73,7 @@ console.log("TX:", result.transactionHash);
 | **Client** | `createClient()` for read-only, `createSigningClient()` for signing |
 | **Queries** | Balance, token info, contract queries |
 | **Transactions** | Send tokens, execute contracts |
-| **Wallet** | Keplr, Leap, Ansem Wallet integration + modal |
+| **Wallet** | Keplr, Leap, Ansemchain Wallet integration + modal |
 | **Contracts** | Generic + CW20-specific contract operations |
 | **Types** | Coin formatting, chain config, transaction types |
 
@@ -108,7 +108,7 @@ ANSEM_DENOM;     // "uchanse"
 
 | Environment | Requirements |
 |-------------|-------------|
-| Browser | Keplr, Leap, or Ansem Wallet extension for wallet features |
+| Browser | Keplr, Leap, or Ansemchain Wallet extension for wallet features |
 | Node.js | Node.js 18+ |
 | Both | Access to an ansemchain RPC node |
 
@@ -122,6 +122,6 @@ ANSEM_DENOM;     // "uchanse"
     Send tokens and execute contracts
   </Card>
   <Card title="Wallets" icon="wallet" href="/sdk/wallets">
-    Connect Keplr, Leap, or Ansem Wallet
+    Connect Keplr, Leap, or Ansemchain Wallet
   </Card>
 </CardGroup>
