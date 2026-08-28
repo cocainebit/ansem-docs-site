@@ -27,7 +27,7 @@ export function Hero({
           height={1125}
           priority
           sizes="(min-width: 1024px) 46rem, 100vw"
-          className="block aspect-video w-full object-cover"
+          className="block h-auto w-full"
         />
       </div>
       {caption && (
