@@ -23,8 +23,8 @@ export function Hero({
         <Image
           src={src}
           alt={alt}
-          width={1920}
-          height={987}
+          width={2000}
+          height={1125}
           priority
           sizes="(min-width: 1024px) 46rem, 100vw"
           className="block aspect-video w-full object-cover"
