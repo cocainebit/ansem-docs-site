@@ -9,6 +9,7 @@ import {
   type TabChild,
 } from "./interactive";
 import { slugify, textOf } from "@/lib/slug";
+import { HornCatalog } from "./horn-catalog";
 
 /* -------------------------------------------------------------------------
    Callouts
@@ -328,6 +329,7 @@ export const mdxComponents = {
   Tab,
   CodeGroup,
   Frame: ({ children }: { children: ReactNode }) => <div className="my-6">{children}</div>,
+  HornCatalog,
   h2: heading("h2"),
   h3: heading("h3"),
   table,

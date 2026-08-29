@@ -10,6 +10,7 @@ README.md for layout and the two-edit rule for adding a page.
 |------------|-----------|-------------------------------------------------------------|
 | 2026-08-27 | docs port | whole tree: initial port, retheme, nav. Dev server on :3344 |
 | 2026-08-28 | docs port | docs assistant: `app/api/ask`, `lib/retrieve.ts`, `components/Ask.tsx`. Needs ANTHROPIC_API_KEY in .env.local |
+| 2026-08-29 | docs trim+horns | hide SDK/Developers + trim Reference to endpoints in `lib/nav-source.json`; add Horns catalog: `components/horn-catalog.tsx` (+ register in `components/mdx.tsx`), `content/horns/overview.mdx`, `public/horns/art/*.png`. No other files. |
 
 Add your row BEFORE you write a file. Several Claude instances run on this
 machine at once; see ~/.claude/CLAUDE.md for the machine-wide rules.

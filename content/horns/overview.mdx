@@ -1,0 +1,20 @@
+---
+title: 'Horns'
+description: 'The v4-style hook contracts that attach to a graduated pool: reward routing, fee strategies, shaped liquidity and more'
+---
+Horns are optional hook contracts that attach to a token's AMM pool when it graduates. Each one plugs into the same interface and can reprice a swap, override its fee, route the skim to holders, or shape liquidity, without ever being able to drain the pool: any price change a Horn returns is re-validated against live reserves by the AMM before the swap settles.
+
+A creator picks the Horns for their token at launch. A pool can run one Horn, or several at once through the Composite Router.
+
+## The catalog
+
+<HornCatalog />
+
+## How they attach
+
+Every Horn implements two hook points on the AMM:
+
+- **`before_swap`** is a query that returns a decision: `Proceed`, `Reject`, `OverrideFee`, or `Delta` (a price adjustment). Any `Delta` is re-validated against reserves here, which is the systemic backstop that stops a Horn from ever draining a pool.
+- **`after_swap`** is a revert-on-fail sub-message, so a Horn that routes fees or books state runs after the swap and can be settled safely.
+
+The trust chain is explicit end to end: **AMM → (Composite) → Horn**. A misbehaving reward or treasury Horn degrades rather than reverting the underlying trade.
